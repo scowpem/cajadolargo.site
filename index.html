@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <title></title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: black;
+        }
+
+        a {
+            color: white;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 10px;
+            font-style: normal;
+            text-decoration: none;
+        }
+
+        button {
+            background-color: orange;
+            border-style: solid;
+            border-color: white;
+            border-width: 2;
+            color: white;
+            font-size: 17px;
+            border-radius: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+
+        .btn-first {
+            height: 70px;
+        }
+
+
+        main {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            text-justify: center;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        .divider {
+            margin-top: 70px;
+            margin-bottom: 70px;
+            background-color: gray;
+            width: 100vw;
+            height: 0.009rem;
+        }
+
+        p {
+            color: white;
+            font-size: 8px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div style="display: flex;justify-content: center;" id="container-video">
+            <script type="text/javascript" id="scr_62700158c3436c0009118ff4">
+            </script>
+        </div>
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 40px;">
+            <button id="botao-venda" onclick="openLink()" class="btn-first" style="display: none;"></button>
+        </div>
+
+
+        <div style="position:absolute;margin-top:40px;bottom:0px;left:0">
+            <div style="margin-top: 50px;text-align: center;">
+                <a id="termos" href="#" target="_blank">Termos de uso</a>
+                <a id="politica" href="#" target="_blank">Política de privacidade</a>
+            </div>
+            <p style="text-align: center;"><strong><span style="color: #ffffff;">Este
+                        site
+                        não é afiliado ao
+                        Facebook ou
+                        a
+                        qualquer entidade do
+                        Facebook.</span></strong> Depois que você sair do Facebook, a responsabilidade não é deles e sim
+                do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e
+                usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais
+                fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato
+                e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas
+                as mensagens por ordem de chegada.</p>
+        </div>
+    </main>
+
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '684679809257586');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=684679809257586&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+    <script>
+        var pageAttrs = {
+            tituloPagina: "Foi revelado",
+            corFundoPrimeiroBotao: "orange",
+            textoPrimeiroBotao: "QUERO COMPRAR AGORA",
+            linkVideo: "https://scripts.converteai.net/a89ec139-b1be-4747-a4d2-2e59b7003dfe/players/6282fd4fcecb39000a3977b8/player.js",
+            linkTermosDeUso: "https://www.lucrandotanto.site/termos-uso-bjm",
+            linkPoliticaDePrivacidade: "https://www.lucrandotanto.site/politicas-privacidade-bjm",
+            linkBotao: "https://pay.kiwify.com.br/lv5FcER?afid=GPjWCYUD",
+            delayBotao: 1020
+        };
+
+
+        window.onload = function () {
+            document.title = pageAttrs.tituloPagina;
+            $(".btn-first").css("background-color", pageAttrs.corFundoPrimeiroBotao);
+            $(".btn-first").html(pageAttrs.textoPrimeiroBotao);
+            $(".btn-second").css("background-color", pageAttrs.corFundoSegundoBotao);
+            $(".btn-second").html(pageAttrs.textoSegundoBotao);
+
+            $("#termos").attr("href", pageAttrs.linkTermosDeUso)
+            $("#politica").attr("href", pageAttrs.linkTermosDeUso)
+
+            var a = document.createElement("script");
+            a.id = "scr_" + pageAttrs.linkVideo.split("/")[5]
+            document.querySelector('#container-video').appendChild(a)
+
+            var s = document.createElement("script");
+            s.src = pageAttrs.linkVideo, s.async = !0, document.head.appendChild(s);
+
+            setTimeout(() => {
+                $("#botao-venda").show();
+            }, pageAttrs.delayBotao * 1000)
+        }
+        function openLink() {
+            window.open(pageAttrs.linkBotao)
+        }
+
+    </script>
+</body>
+
+</html>
